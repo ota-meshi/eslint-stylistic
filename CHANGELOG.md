@@ -1,5 +1,130 @@
 # Changelog
 
+## [2.7.1](https://github.com/ota-meshi/eslint-stylistic/compare/v2.10.0...v2.7.1) (2024-11-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* requires Node `^18.18.0 || ^20.9.0 || >=21.1.0`, bump deps ([#337](https://github.com/ota-meshi/eslint-stylistic/issues/337))
+
+### Features
+
+* add indent option tabLength to customize config ([#538](https://github.com/ota-meshi/eslint-stylistic/issues/538)) ([91a18e7](https://github.com/ota-meshi/eslint-stylistic/commit/91a18e7a1af7f46c0a125e93c68ac7bc5004d74d))
+* bump `[@typescript-eslint](https://github.com/typescript-eslint)` to v8 ([#452](https://github.com/ota-meshi/eslint-stylistic/issues/452)) ([27d6b00](https://github.com/ota-meshi/eslint-stylistic/commit/27d6b0012801e472a26095708839b37d1e2b4a61))
+* cross test `comma-spacing` ([#562](https://github.com/ota-meshi/eslint-stylistic/issues/562)) ([ea72317](https://github.com/ota-meshi/eslint-stylistic/commit/ea72317f548bf6904d10d7f415ce38dc04e454ff))
+* **curly-newline:** add new rule ([#548](https://github.com/ota-meshi/eslint-stylistic/issues/548)) ([049c20e](https://github.com/ota-meshi/eslint-stylistic/commit/049c20e409eb69b19e2fa7434ca5b13276d8adf5))
+* **function-call-spacing:** auto-fix optional chain when option is `never` ([#589](https://github.com/ota-meshi/eslint-stylistic/issues/589)) ([7a2b47f](https://github.com/ota-meshi/eslint-stylistic/commit/7a2b47f9cfa32e311eea5b16b3a26c9d034f60df))
+* **function-call-spacing:** support `ImportExpression` in `ts` version ([#570](https://github.com/ota-meshi/eslint-stylistic/issues/570)) ([19d1f8c](https://github.com/ota-meshi/eslint-stylistic/commit/19d1f8c4a4ae674c53adb4c908bd82985f9af6b9))
+* Improve indent in template literals ([#553](https://github.com/ota-meshi/eslint-stylistic/issues/553)) ([9130c94](https://github.com/ota-meshi/eslint-stylistic/commit/9130c94eff8a0c97dbee2057c4e9b5891339ce44))
+* **indent-binary-ops:** logical expression indent ([#576](https://github.com/ota-meshi/eslint-stylistic/issues/576)) ([cbf800d](https://github.com/ota-meshi/eslint-stylistic/commit/cbf800ddebf04b2439a751a5d773b80c498f504e))
+* **indent:** add support for Import Attributes ([#579](https://github.com/ota-meshi/eslint-stylistic/issues/579)) ([4f944d8](https://github.com/ota-meshi/eslint-stylistic/commit/4f944d803f779194d76bbd8d9308cef2fb22d7ec))
+* **indent:** indention inside TemplateLiteral always start at level one ([#528](https://github.com/ota-meshi/eslint-stylistic/issues/528)) ([d2f92c0](https://github.com/ota-meshi/eslint-stylistic/commit/d2f92c0a04292b05ddbc785c7803be8f94935f80))
+* **indent:** support for JSXText indentation ([#413](https://github.com/ota-meshi/eslint-stylistic/issues/413)) ([a5b62a0](https://github.com/ota-meshi/eslint-stylistic/commit/a5b62a04d3b25d6144a5935f0ed9370487f26409))
+* **js/array-element-newline:** options multiline and consistent combination ([#445](https://github.com/ota-meshi/eslint-stylistic/issues/445)) ([cfd3327](https://github.com/ota-meshi/eslint-stylistic/commit/cfd332766de15e9ab29e92c5048640a07f2f15bd))
+* **js:** add option `ignoreStringLiterals` ([#401](https://github.com/ota-meshi/eslint-stylistic/issues/401)) ([1b6d563](https://github.com/ota-meshi/eslint-stylistic/commit/1b6d563921b408723fa9a5bd911f5890c698f649)), closes [#400](https://github.com/ota-meshi/eslint-stylistic/issues/400)
+* **js:** port `multiline-comment-style` and `line-comment-position` ([#389](https://github.com/ota-meshi/eslint-stylistic/issues/389)) ([e3212fe](https://github.com/ota-meshi/eslint-stylistic/commit/e3212fe2e9daca4e1be69751654eb3c0c1176929))
+* **jsx-function-call-newline:** add jsx-function-call-newline rule ([#376](https://github.com/ota-meshi/eslint-stylistic/issues/376)) ([110aa4c](https://github.com/ota-meshi/eslint-stylistic/commit/110aa4ccc33371e47943952e1b595d67239ef5dc))
+* **jsx-one-expression-per-line:** allow `non-jsx` ([#393](https://github.com/ota-meshi/eslint-stylistic/issues/393)) ([431d564](https://github.com/ota-meshi/eslint-stylistic/commit/431d56475af2ba183421cb051e486b2bb6940169))
+* **jsx-one-expression-per-line:** allow single line ([#377](https://github.com/ota-meshi/eslint-stylistic/issues/377)) ([f8825f2](https://github.com/ota-meshi/eslint-stylistic/commit/f8825f290cd049c07f17dd2fea16ffec6e532e39))
+* **jsx-wrap-multilines:** supports adding parentheses and line breaks for object properties ([#372](https://github.com/ota-meshi/eslint-stylistic/issues/372)) ([c72d043](https://github.com/ota-meshi/eslint-stylistic/commit/c72d0437e4cf447918b0750200cf8fb6a46af2cf))
+* **jsx/jsx-closing-tag-location:** add location option to customize indentation ([#550](https://github.com/ota-meshi/eslint-stylistic/issues/550)) ([ae09edd](https://github.com/ota-meshi/eslint-stylistic/commit/ae09edda14304e85df1426a7eb79e68d4fd029ba))
+* **key-spacing:** add support for Import Attributes ([#583](https://github.com/ota-meshi/eslint-stylistic/issues/583)) ([789d893](https://github.com/ota-meshi/eslint-stylistic/commit/789d8935de1f05c6f525017bbb55b2729cff55b2))
+* **max-statements-per-line:** new option to allow specific statements ([#558](https://github.com/ota-meshi/eslint-stylistic/issues/558)) ([2ed4054](https://github.com/ota-meshi/eslint-stylistic/commit/2ed405430c52ee13b5eaf2754e7c6c178d4e79e5))
+* migrate to `@types/eslint` `v9.6.0` ([#479](https://github.com/ota-meshi/eslint-stylistic/issues/479)) ([ea72aae](https://github.com/ota-meshi/eslint-stylistic/commit/ea72aaedc94c8178aa338f563b717f33ffc713f7))
+* **no-multi-spaces:** add support for Import Attributes ([#584](https://github.com/ota-meshi/eslint-stylistic/issues/584)) ([0da0713](https://github.com/ota-meshi/eslint-stylistic/commit/0da07139a6c8e65d0478db91b534498d9a6c9889))
+* **padding-line-between-statements:** add support for multiline-export and singleline-export ([#582](https://github.com/ota-meshi/eslint-stylistic/issues/582)) ([2690a30](https://github.com/ota-meshi/eslint-stylistic/commit/2690a302d50b044a58f7143fd26cb4204ab7e19d))
+* **quote-props:** add support for Import Attributes ([#581](https://github.com/ota-meshi/eslint-stylistic/issues/581)) ([4edfee2](https://github.com/ota-meshi/eslint-stylistic/commit/4edfee2c573214b8feec1e1f1c06835e5cdb626c))
+* remove `@types/eslint` ([5ea3d6a](https://github.com/ota-meshi/eslint-stylistic/commit/5ea3d6ac78ffd269a14bb86b848b1b4a3c8ca1d1))
+* requires Node `^18.18.0 || ^20.9.0 || &gt;=21.1.0`, bump deps ([#337](https://github.com/ota-meshi/eslint-stylistic/issues/337)) ([300ce2c](https://github.com/ota-meshi/eslint-stylistic/commit/300ce2cdf3154dcfd139e60546234ec8fd2620d2))
+* **ts:** add `object-curly-newline` and `object-property-newline` ([#444](https://github.com/ota-meshi/eslint-stylistic/issues/444)) ([036d3de](https://github.com/ota-meshi/eslint-stylistic/commit/036d3de3a02e86dde21b01369f98521571cd4273))
+
+
+### Bug Fixes
+
+* add explicit `"type": "commonjs"` ([9d37124](https://github.com/ota-meshi/eslint-stylistic/commit/9d37124f9b5374c76d5a178928cb350b110dcfce))
+* **arrow-parens:** wrong parens removal with optional parameter ([#499](https://github.com/ota-meshi/eslint-stylistic/issues/499)) ([71896ce](https://github.com/ota-meshi/eslint-stylistic/commit/71896ce0395f810d96e643f47e98ef3812a6dc05))
+* compatible with ts-eslint v7, close [#484](https://github.com/ota-meshi/eslint-stylistic/issues/484) ([c312fc7](https://github.com/ota-meshi/eslint-stylistic/commit/c312fc7a8b232353bd38b2ab0d2665a4f7851de5))
+* **configs:** should not ignore `templateLiteral` for `indent` ([3154799](https://github.com/ota-meshi/eslint-stylistic/commit/3154799d2dec1aab326ce787e2da233696e451b6))
+* correct the type of `quotes` in `customize` ([#590](https://github.com/ota-meshi/eslint-stylistic/issues/590)) ([b86c2df](https://github.com/ota-meshi/eslint-stylistic/commit/b86c2df9a4700bbe37dd2fbb6fe45dba904895f7))
+* **function-call-spacing:** don't remove comments while auto-fixing ([#588](https://github.com/ota-meshi/eslint-stylistic/issues/588)) ([53b4a55](https://github.com/ota-meshi/eslint-stylistic/commit/53b4a55b6ddca27e8f1cebf90a8835dc383fd07b))
+* **indent-binary-ops:** improve nested handling, close [#530](https://github.com/ota-meshi/eslint-stylistic/issues/530) ([af1c21a](https://github.com/ota-meshi/eslint-stylistic/commit/af1c21a4666e3a3d927c05f5f977a37c1477640a))
+* **indent:** correct class property initialization ([#431](https://github.com/ota-meshi/eslint-stylistic/issues/431)) ([09ea5b0](https://github.com/ota-meshi/eslint-stylistic/commit/09ea5b0fdccc3f8585cfaf574914f4f9c2109d5d))
+* **indent:** correct indentation for `PropertyDefinition` with decorators ([#416](https://github.com/ota-meshi/eslint-stylistic/issues/416)) ([4b4d27c](https://github.com/ota-meshi/eslint-stylistic/commit/4b4d27c0ede2bada33aab5cb9fcdca7e77448b8a))
+* **indent:** correct indentation in chained methods calls with generics ([#424](https://github.com/ota-meshi/eslint-stylistic/issues/424)) ([4ba8b08](https://github.com/ota-meshi/eslint-stylistic/commit/4ba8b0866e602dd416d367d6435c747d594bbe97))
+* **indent:** handle mixed spaces and tabs ([#465](https://github.com/ota-meshi/eslint-stylistic/issues/465)) ([d5ae88d](https://github.com/ota-meshi/eslint-stylistic/commit/d5ae88d6602f0e506872d06ef3dd1b4e6443638e))
+* **indent:** handle undefined `node.decorators` when tsParser is not configured ([#422](https://github.com/ota-meshi/eslint-stylistic/issues/422)) ([3d63054](https://github.com/ota-meshi/eslint-stylistic/commit/3d63054ca962a00cdc5a3b4406daac97e7b94371))
+* **indent:** indentation for argument with decorators ([#487](https://github.com/ota-meshi/eslint-stylistic/issues/487)) ([aefb3be](https://github.com/ota-meshi/eslint-stylistic/commit/aefb3be36e53857e8ce7fb1a0d629d1dab11979b))
+* **jsx-closing-bracket-location:** should not remove comment in jsx ([#566](https://github.com/ota-meshi/eslint-stylistic/issues/566)) ([e2ba8d5](https://github.com/ota-meshi/eslint-stylistic/commit/e2ba8d535884a4f997f22b42be0c3f5c0d4f1c64))
+* **jsx-indent:** conflict between indent and jsx-indent ([#368](https://github.com/ota-meshi/eslint-stylistic/issues/368)) ([7313184](https://github.com/ota-meshi/eslint-stylistic/commit/731318474fd5c7b0abe7f21abcb7334949bafc2e))
+* **jsx-indent:** deprecate `jsx-indent` rule in favor of `indent` ([#447](https://github.com/ota-meshi/eslint-stylistic/issues/447)) ([57dd2e8](https://github.com/ota-meshi/eslint-stylistic/commit/57dd2e8b5927e6f9de019fff6e83cac4989de7ce))
+* **jsx-one-expression-per-line:** only one line break has not been processed ([#384](https://github.com/ota-meshi/eslint-stylistic/issues/384)) ([a297f84](https://github.com/ota-meshi/eslint-stylistic/commit/a297f8434894fab99c5a2792477a8f9818aa3031))
+* **lines-between-class-members:** properly infer `exceptAfterOverload` from `enforce` ([#239](https://github.com/ota-meshi/eslint-stylistic/issues/239)) ([3dfa159](https://github.com/ota-meshi/eslint-stylistic/commit/3dfa1594c2b9e75e4a4260ca07d5f5c654204d18))
+* make plugin assignable to ESLint.Plugin ([#418](https://github.com/ota-meshi/eslint-stylistic/issues/418)) ([9887ead](https://github.com/ota-meshi/eslint-stylistic/commit/9887ead9ae485fa8393e2f7b529074bf04200867))
+* move spacing rules about `as` and `satisfies` from `type-annontation-spacing` to `keyword-spacing` ([#535](https://github.com/ota-meshi/eslint-stylistic/issues/535)) ([b89ae5e](https://github.com/ota-meshi/eslint-stylistic/commit/b89ae5e8f588fc68d59df7c5d7a14559d878c331))
+* **plus/indent-binary-ops:** considring `||` and `&&` ([#430](https://github.com/ota-meshi/eslint-stylistic/issues/430)) ([9627a10](https://github.com/ota-meshi/eslint-stylistic/commit/9627a10af0e873475b0a90fef289a45033370df3))
+* **quotes:** allow template literals to avoid escape sequences ([#410](https://github.com/ota-meshi/eslint-stylistic/issues/410)) ([1891c5f](https://github.com/ota-meshi/eslint-stylistic/commit/1891c5fd8ae3580b892694836c2a387070de2084))
+* **quotes:** ignore backtick in ts import types ([#493](https://github.com/ota-meshi/eslint-stylistic/issues/493)) ([a7f7c2a](https://github.com/ota-meshi/eslint-stylistic/commit/a7f7c2a900223570586740763487b674644560e2))
+* **quotes:** only when allowTemplateLiterals set, allow template literals to avoid escape sequences ([#544](https://github.com/ota-meshi/eslint-stylistic/issues/544)) ([7e3a0d3](https://github.com/ota-meshi/eslint-stylistic/commit/7e3a0d3b1989e708e0bad9a6315c4a91c34a4948))
+* **ts/padding-line-between-statements:** removing blank line between functions in interface ([#71](https://github.com/ota-meshi/eslint-stylistic/issues/71)) ([#468](https://github.com/ota-meshi/eslint-stylistic/issues/468)) ([91eb636](https://github.com/ota-meshi/eslint-stylistic/commit/91eb636c6eb8e6887ec67fb9ecaa2b24079ef16f))
+* **ts:** chunk bundling ([a278468](https://github.com/ota-meshi/eslint-stylistic/commit/a27846842778970d2a1d9d91799aec8e233fc840))
+* **type-annotation-spacing:** consider spacing around `as` and `satisfies` operator ([#517](https://github.com/ota-meshi/eslint-stylistic/issues/517)) ([cf254a9](https://github.com/ota-meshi/eslint-stylistic/commit/cf254a9f00d504d2f433a937cfb25003083e2552))
+* **type-generic-spacing:** consider parentheses ([#467](https://github.com/ota-meshi/eslint-stylistic/issues/467)) ([fd08dd8](https://github.com/ota-meshi/eslint-stylistic/commit/fd08dd862081d34094423441115f39d7013b6464))
+* **types:** add missing type reference, close [#526](https://github.com/ota-meshi/eslint-stylistic/issues/526) ([47fddb0](https://github.com/ota-meshi/eslint-stylistic/commit/47fddb0f6ac7f6e45188eff4f28755885e317249))
+
+
+### Documentation
+
+* add flat config versions for Migrate to 1-to-1 Plugins ([#435](https://github.com/ota-meshi/eslint-stylistic/issues/435)) ([d670924](https://github.com/ota-meshi/eslint-stylistic/commit/d6709241555f6acd34c52325c3a044f32f1b8241))
+* fix "Contributing" link ([#383](https://github.com/ota-meshi/eslint-stylistic/issues/383)) ([c89125f](https://github.com/ota-meshi/eslint-stylistic/commit/c89125f7e81cfb5ebce37ce65bfdba726456574a))
+* fix broken link in ts/lines-between-class-members rule ([#385](https://github.com/ota-meshi/eslint-stylistic/issues/385)) ([594a860](https://github.com/ota-meshi/eslint-stylistic/commit/594a860b25ae032d11dddf0cf1303d3ee6d3c934))
+* fix indentation in jsx.md ([#434](https://github.com/ota-meshi/eslint-stylistic/issues/434)) ([578fce1](https://github.com/ota-meshi/eslint-stylistic/commit/578fce1a7311a5ae25fa4781577b25c3df5b64c7))
+* fix link ([#379](https://github.com/ota-meshi/eslint-stylistic/issues/379)) ([5060350](https://github.com/ota-meshi/eslint-stylistic/commit/5060350fe3ecc3acd7fae83eb45cbd4de9c06fb5))
+* fix link to selectors ([#345](https://github.com/ota-meshi/eslint-stylistic/issues/345)) ([54bafb7](https://github.com/ota-meshi/eslint-stylistic/commit/54bafb76c43bb8e808b5019f5d9e9e8a4e0ee387))
+* fix note block display ([#471](https://github.com/ota-meshi/eslint-stylistic/issues/471)) ([28db32c](https://github.com/ota-meshi/eslint-stylistic/commit/28db32cb894cb1f7a70eaa0ef5f162aaaf1cf08c))
+* fix typo in migration.md ([#432](https://github.com/ota-meshi/eslint-stylistic/issues/432)) ([fc38d86](https://github.com/ota-meshi/eslint-stylistic/commit/fc38d86faa632807aa869f2e2906ea133c487558))
+* **func-call-spacing:** fixing broken links ([#587](https://github.com/ota-meshi/eslint-stylistic/issues/587)) ([d3dbc22](https://github.com/ota-meshi/eslint-stylistic/commit/d3dbc22f89c6cf7c8e54feedb5b73a8b64e145e9))
+* improve docs search, close [#381](https://github.com/ota-meshi/eslint-stylistic/issues/381) ([d0df679](https://github.com/ota-meshi/eslint-stylistic/commit/d0df679403645bfddceb629bb35284bb9ae0a38a))
+* **no-mixed-operators:** clarify rule behavior for parameter 'groups' ([#302](https://github.com/ota-meshi/eslint-stylistic/issues/302)) ([cd02cea](https://github.com/ota-meshi/eslint-stylistic/commit/cd02cea85ce3cafee1d8bf5f3b4dfa9bee920542))
+* redirect curly to eslint page ([#309](https://github.com/ota-meshi/eslint-stylistic/issues/309)) ([4d0e78e](https://github.com/ota-meshi/eslint-stylistic/commit/4d0e78ecc222d7af39c01fdd95d08d5af7491754))
+* redirect rule docs, close [#532](https://github.com/ota-meshi/eslint-stylistic/issues/532) ([7b92cfd](https://github.com/ota-meshi/eslint-stylistic/commit/7b92cfd6f9de8deeef646112254addabaf54f4d5))
+* **ts/member-delimiter-style:** fix spaces ([#461](https://github.com/ota-meshi/eslint-stylistic/issues/461)) ([240006c](https://github.com/ota-meshi/eslint-stylistic/commit/240006cd887de265dc33eb027765846bd877bfd2))
+* typo ([#534](https://github.com/ota-meshi/eslint-stylistic/issues/534)) ([9573674](https://github.com/ota-meshi/eslint-stylistic/commit/9573674cb7a15885255a4c20f0e92a588886fabc))
+* update links ([f80db20](https://github.com/ota-meshi/eslint-stylistic/commit/f80db20d67d2f796655fd83de370609e21fa701f))
+* update project progress ([#449](https://github.com/ota-meshi/eslint-stylistic/issues/449)) ([d6d72c8](https://github.com/ota-meshi/eslint-stylistic/commit/d6d72c8975f8a9be0e25dd6c41d03d90b00b2a62))
+* update repo url ([618eb66](https://github.com/ota-meshi/eslint-stylistic/commit/618eb6614a6d08f694ec61ce62df0f4865285230))
+* update repro link ([83e35d1](https://github.com/ota-meshi/eslint-stylistic/commit/83e35d13ba0a54ef484e20ac5df143b600d38fd3))
+* use new vscode codeActionsOnSave syntax ([#511](https://github.com/ota-meshi/eslint-stylistic/issues/511)) ([086b7f3](https://github.com/ota-meshi/eslint-stylistic/commit/086b7f342a5cdbd289e2327ddfc3bb71cb51ba62))
+
+
+### Build Related
+
+* improve bundling ([bb187a8](https://github.com/ota-meshi/eslint-stylistic/commit/bb187a85b65d611a985f3b0da0f200d0711a2f6b))
+* standalone build for main package ([971b534](https://github.com/ota-meshi/eslint-stylistic/commit/971b53481a21ce8aa801d2142c7843e0560e626d))
+* try using a single package for release-please ([b3bf006](https://github.com/ota-meshi/eslint-stylistic/commit/b3bf006e340a5690479b82f457c4f9826ef24e67))
+
+
+### Chores
+
+* alias for shared utils ([#510](https://github.com/ota-meshi/eslint-stylistic/issues/510)) ([6ea8368](https://github.com/ota-meshi/eslint-stylistic/commit/6ea83684cd558a8f9b77c17df31d39d30a669c69))
+* consistent `createRule` argument order ([83e22f2](https://github.com/ota-meshi/eslint-stylistic/commit/83e22f29e46603d103b50627c34620fa93226583))
+* cross test merged rules (partial) ([#520](https://github.com/ota-meshi/eslint-stylistic/issues/520)) ([97448b9](https://github.com/ota-meshi/eslint-stylistic/commit/97448b9648206f0eb2230a17cf08f8014476ae13))
+* cross test merged rules (rest)  ([#529](https://github.com/ota-meshi/eslint-stylistic/issues/529)) ([e9087d3](https://github.com/ota-meshi/eslint-stylistic/commit/e9087d3e5fd9f7966c86091a4349d7244ace1fc7))
+* **indent:** add tests ([#428](https://github.com/ota-meshi/eslint-stylistic/issues/428)) ([1334417](https://github.com/ota-meshi/eslint-stylistic/commit/1334417307871bee72718c4d3056ac3e29d935e2))
+* **indent:** simplify the code related to `PropertyDefinition` with decorators ([#489](https://github.com/ota-meshi/eslint-stylistic/issues/489)) ([53d731f](https://github.com/ota-meshi/eslint-stylistic/commit/53d731ff19ef25c8c4fbbab6db4b1f4a6270bdd2))
+* make ts plugin self-contains ([#519](https://github.com/ota-meshi/eslint-stylistic/issues/519)) ([7c7301e](https://github.com/ota-meshi/eslint-stylistic/commit/7c7301e8f6844c833485542fc1eb3a1132d9c6c6))
+* move code into one package ([#497](https://github.com/ota-meshi/eslint-stylistic/issues/497)) ([3a9535f](https://github.com/ota-meshi/eslint-stylistic/commit/3a9535fd35367b3d8ae5e2d63616c2b080395d3c))
+* move js utils out ([bc3a15d](https://github.com/ota-meshi/eslint-stylistic/commit/bc3a15dbbfbcb7ffa7527c9275ad852703492848))
+* move utils ([011f5fb](https://github.com/ota-meshi/eslint-stylistic/commit/011f5fb1a8b555e6ee96ec26ca3ace37198a1e4e))
+* move utils ([60ef2ba](https://github.com/ota-meshi/eslint-stylistic/commit/60ef2ba54b2485bf9227b66fff826db96a7c31ba))
+* release-please-mark ([34148f4](https://github.com/ota-meshi/eslint-stylistic/commit/34148f41089bcdf9621a02bd62b28b3db94f56ac))
+* release-please-mark ([4b2d7ba](https://github.com/ota-meshi/eslint-stylistic/commit/4b2d7baa01258ef4ec0d92267950ec9a2ceee62e))
+* release-please-mark ([1ed4f7f](https://github.com/ota-meshi/eslint-stylistic/commit/1ed4f7f75faaf9b8e6d334f32505e5399b4702e1))
+* release-please-mark ([96dd0e1](https://github.com/ota-meshi/eslint-stylistic/commit/96dd0e1b66452387f4004e8a4c4ab3527fb04ebc))
+* replace deprecated api with new api ([#567](https://github.com/ota-meshi/eslint-stylistic/issues/567)) ([3db4870](https://github.com/ota-meshi/eslint-stylistic/commit/3db4870f56b5f999439987eb904361488e764cc6))
+* share utils folder ([deb8178](https://github.com/ota-meshi/eslint-stylistic/commit/deb81783ca5132972b1da1fe2a91ad1d8ee4f8e3))
+* **test:** replace the parsing result files with the real parser ([#505](https://github.com/ota-meshi/eslint-stylistic/issues/505)) ([bd6f8bc](https://github.com/ota-meshi/eslint-stylistic/commit/bd6f8bc19130e2bd4672b45abe1e180278f8535a))
+* unify createRule ([#507](https://github.com/ota-meshi/eslint-stylistic/issues/507)) ([fc6e716](https://github.com/ota-meshi/eslint-stylistic/commit/fc6e716f154f30c786288a97a4343c1bc594edab))
+
 ## [2.10.0](https://github.com/eslint-stylistic/eslint-stylistic/compare/v2.9.0...v2.10.0) (2024-10-30)
 
 
