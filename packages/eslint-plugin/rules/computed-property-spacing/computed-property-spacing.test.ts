@@ -275,6 +275,12 @@ run<RuleOptions, MessageIds>({
     },
 
     `type Foo = A[B]`,
+
+    // EcmaVersion 5
+    {
+      code: 'foo = {x: 1}',
+      parserOptions: { ecmaVersion: 3, sourceType: 'script' },
+    },
   ],
 
   invalid: [
